@@ -41,16 +41,16 @@ function Home() {
         <div class="contactos">
           <h4>¿Quieres saber más?</h4>
           <div class="contact-icons">
-            <a href="https://www.linkedin.com/in/ana-jover/" target="_blank">
+            <a href="https://www.linkedin.com/in/ana-jover/" target="_blank" rel="noreferrer">
               <i class="linkedin fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/anajover" target="_blank">
+            <a href="https://github.com/anajover" target="_blank" rel="noreferrer">
               <i class="github fa-brands fa-github"></i>
             </a>
             <a href="mailto:anab.jover@gmail.com">
               <i class="email fa-solid fa-envelope"></i>
             </a>
-            <a href="https://calendly.com/anab-jover" target="_blank">
+            <a href="https://calendly.com/anab-jover" target="_blank" rel="noreferrer">
               <i class="calendar fa-solid fa-calendar"></i>
             </a>
           </div>
@@ -243,10 +243,10 @@ function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-        <form action="https://anajover.github.io/PapaLink/" target="_blank">
+        <form action="https://anajover.github.io/PapaLink/" target="_blank" rel="noreferrer">
         <button type="submit" class="demo-button" >Demo</button>
         </form>
-        <form action="https://github.com/anajover/PapaLink" target="_blank">
+        <form action="https://github.com/anajover/PapaLink" target="_blank" rel="noreferrer">
         <button type="submit" class="repo-button" >Repositorio</button>
         </form>
       </CardActions>
@@ -270,10 +270,10 @@ function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-        <form action="https://iron-blue-terror.herokuapp.com/" target="_blank">
+        <form action="https://iron-blue-terror.herokuapp.com/" target="_blank" rel="noreferrer">
         <button type="submit" class="demo-button" >Demo</button>
         </form>
-        <form action="https://github.com/anajover/Iron-BlueTerror" target="_blank">
+        <form action="https://github.com/anajover/Iron-BlueTerror" target="_blank" rel="noreferrer">
         <button type="submit" class="repo-button" >Repositorio</button>
         </form>
       </CardActions>
@@ -297,13 +297,13 @@ function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-        <form action="https://gamer-orbit.netlify.app/" target="_blank">
+        <form action="https://gamer-orbit.netlify.app/" target="_blank" rel="noreferrer">
         <button type="submit" class="demo-button" >Demo</button>
         </form>
-        <form action="https://github.com/anajover/gamer-orbit-server" target="_blank">
+        <form action="https://github.com/anajover/gamer-orbit-server" target="_blank" rel="noreferrer">
         <button type="submit" class="repo-button-server">Repositorio Server</button>
         </form>
-        <form action="https://github.com/anajover/gamer-orbit-client" target="_blank">
+        <form action="https://github.com/anajover/gamer-orbit-client" target="_blank" rel="noreferrer">
         <button type="submit" class="repo-button-client">Repositorio Client</button>
         </form>
       </CardActions>
