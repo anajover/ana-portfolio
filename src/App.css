@@ -1,0 +1,570 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+body {
+  min-height: 100%;
+  background-color: #f3b6db;
+  background-image: url(/public/imgs/paws.png);
+  background-attachment:fixed;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 150px 750px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: black;
+  color: white;
+  border-bottom: white 2px solid;
+  z-index: 2;
+}
+
+.header h1 {
+  font-family: Fascinate;
+  font-size: 60px;
+  color: #ffcfec;
+  border:#ff77cb;
+  text-shadow: 5px 10px #ff77cb;
+}
+
+.orientation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.white-cat {
+  max-width: 6%;
+  max-height: 100%;
+  /* height: 125px; */
+  float: left;
+  margin-left: 2%;
+}
+
+.black-cat {
+  max-width: 6%;
+  max-height: 100%;
+  /* height: 125px; */
+  float: left;
+  margin-right: 5%;
+}
+
+.left-menu {
+  position: fixed;
+  left: 0px;
+  top: 150px;
+  height: 100%;
+  width: 15%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color:#ffa7dd;
+  border-top: white 2px solid;
+  border-right: white 2px solid;
+}
+
+.left-menu ul {
+  margin-left: 30px;
+  text-align: left;
+  list-style-image: url(/public/imgs/paw.png);
+}
+
+.left-menu li {
+  margin-bottom: 10px;
+}
+
+.left-menu ul > li a {
+  text-decoration: none;
+  text-shadow: 0px 2px white;
+}
+
+.left-menu ul > li a:hover {
+  color: white;
+  text-shadow: 0px 2px #ff77cb;
+}
+
+.profile {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border:#ffcfec solid 5px;
+  border-radius: 10px;
+  max-width: 75%;
+  height: auto;
+  box-shadow: 5px 10px #ff77cb;
+}
+
+.contactos {
+  margin-top: 50px;
+}
+
+.contact-icons {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-icons a {
+  display: block;
+  padding: 0 12px;
+  background:black;
+  color: #ffa7dd;
+  line-height: 52px;
+  font-size: 25px;
+  height: 55px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.contact-icons a:hover {
+  background: #ff77cb;
+  color: black;
+}
+
+#aboutme {
+  margin-top: 150px;
+  margin-bottom: 0px;
+  padding-top:0;
+  padding-bottom: 25%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3b6db; 
+  background-image: url(/public/imgs/paws.png);
+  background-attachment:fixed;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+#aboutme h1 {
+  font-family: Fascinate;
+  font-size: 60px;
+  color: white;
+  text-shadow: 5px 10px #ff77cb;
+}
+
+#aboutme p {
+  margin-top: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  font-family: Kalam;
+  font-size: 20px;
+  width: 50%;
+  min-height: 100%;
+  max-height: 150%;
+  
+}
+
+#estudios,
+#experiencia,
+#conocimientos,
+#proyectos {
+  margin: 0;
+  background-attachment:fixed;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  min-height: 100vh;
+}
+
+#estudios {
+  background-color:black;
+  background-image: url(/public/imgs/paws-pink.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:50px
+}
+
+#estudios h1 {
+  font-family: Fascinate;
+  font-size: 60px;
+  color: #ff77cb;
+  text-shadow: 5px 10px white;
+  padding: 0;
+}
+
+#experiencia {
+  background-color: #f3b6db;
+  background-image: url(/public/imgs/paws.png);
+  /* height: 100vmin; */
+  /* margin-top: 150px; */
+  /* margin-bottom: 0px;
+  padding-top:0; */
+}
+
+#experiencia h1 {
+  font-family: Fascinate;
+  font-size: 60px;
+  color: white;
+  text-shadow: 5px 10px #ff77cb;
+  padding-top: 30px;
+}
+
+#experiencia p {
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 150%;
+  font-size: 1vw;
+}
+
+#conocimientos {
+  background-color: black;
+  background-image: url(/public/imgs/paws-pink.png);
+  margin-top: 50px;
+}
+
+#conocimientos h1 {
+  font-family: Fascinate;
+  font-size: 60px;
+  color: #ff77cb;
+  text-shadow: 5px 10px white;
+  padding-top: 30px;
+}
+
+#conocimientos h2 {
+  font-family: Economica;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#conocimientos ul {
+  font-family: Kalam;
+  color: white;
+  text-align: left;
+  list-style: "+";
+  margin-left: 0;
+  text-indent: 1em;
+}
+
+.habilidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding-left:10px;
+}
+
+.html,
+.css,
+.js,
+.react,
+.node,
+.bootstrap,
+.git,
+.github2 {
+  color: #ffa7dd;
+  font-size: 50px;
+  padding: 0 12px;
+}
+
+.mongo {
+  border-radius: 10px;
+}
+
+#proyectos {
+  background-color: #f3b6db;
+  background-image: url(/public/imgs/paws.png);
+}
+
+#proyectos h1 {
+  font-family: Fascinate;
+  font-size: 60px;
+  color: white;
+  text-shadow: 5px 10px #ff77cb;
+  padding-top: 30px;
+}
+
+.misproyectos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projectcard {
+  width: 300px;
+  max-height: 500px;
+  margin-left: 50px;
+  margin-top: 150px;
+  border: 1px solid #ff77cb;
+  border-radius: 5px;
+  box-shadow: 5px 10px #ff77cb;
+}
+
+.papa-title,
+.iron-title,
+.orbit-title {
+  text-align: left;
+  font-family: Economica;
+  font-size: 30px;
+}
+
+.papa-body,
+.iron-body,
+.orbit-body {
+  text-align: left;
+  font-family: Kalam;
+}
+
+.iron-body
+ {
+  margin-bottom: 65px;
+}
+
+.papa-body {
+  margin-bottom: 40px;
+}
+
+.demo-button {
+  height: 45px;
+  width: 75px;
+  background-color: transparent;
+  border: 2px solid #ff77cb;
+  border-radius: 7px;
+  color: #ff77cb;
+  font-size: 15px;
+}
+
+.demo-button a {
+  text-decoration: none;
+  color: #ff77cb;
+}
+
+.demo-button:hover,
+.repo-button:hover,
+.repo-button-server:hover,
+.repo-button-client:hover {
+  background-color: #ff77cb;
+  border: 2px solid black;
+  border-radius: 7px;
+  color: black;
+}
+
+.demo-button a:hover,
+.repo-button a:hover,
+.repo-button-server a:hover,
+.repo-button-client a:hover {
+  background-color: #ff77cb;
+  color: black;
+}
+
+.repo-button,
+.repo-button-server,
+.repo-button-client {
+  height: 45px;
+  width: 100px;
+  background-color: transparent;
+  border: 2px solid #ff77cb;
+  border-radius: 7px;
+  color: #ff77cb;
+  font-size: 15px;
+}
+
+/* Card Rosa */
+.card {
+  margin: 0px 50px;
+  margin-top: 100px;
+  padding: 20px;
+  max-width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow:0px 6px 10px #ff77cb;
+}
+
+.card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: Economica;
+  text-shadow:0px 6px 10px #ff77cb;
+}
+
+.card__title p {
+  font-size: 20px;
+}
+
+/*Card background*/
+.card-2 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-5 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+/*Timelines de Experiencia*/
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background: #ff77cb;
+}
+ 
+.timeline ul li::after {
+  content: url(/public/imgs/paw.png);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  padding-top: 20px;
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+  /* border:pink 8px solid; */
+  box-shadow:inset 0px 0px 0px 7px white;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px #ff77cb;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 60px;
+  top: -20px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -490px;
+  top: -20px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent white;
+}
+
+.date-odd {
+  position:absolute;
+  left: -320px;
+  top: 90%;
+  font-family: Economica;
+  font-size: 1vw;
+  min-width: 50%;
+  max-width: 90%;
+}
+
+.date-even {
+  position:absolute;
+  right: -300px;
+  top: 90%;
+  font-family: Economica;
+  font-size: 20px;
+}
+
+.company-title {
+  font-family: Economica;
+  font-size: 30px;
+}
+
+.company-description {
+  font-family: Economica;
+  font-size: 20px;
+}
